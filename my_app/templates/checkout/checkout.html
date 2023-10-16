@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for lesson in course.lesson_set.all %}
+<h2>lesson: {{lesson}}</h2>
+{% endfor %}
+{% endblock %}
